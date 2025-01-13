@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory | Cafeteria Mangement System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="inventory_style.css">
+</head>
+<body>
+    <label>
+        <script src="inventory.js"></script>
+        <input type="checkbox" id="checkbox">
+        <div class="toggle">
+            <span class="top_line common"></span>
+            <span class="middle_line common"></span>
+            <span class="bottom_line common"></span>
+        </div>
+        <div class="slide">
+            <h1 id="dashboard">MENU</h1>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-tachometer-alt"></i>Dashboard</a></li>
+                <li><a href="#"><i class="fas fa-chart-line"></i>Today's sales </a></li>
+                <li><a href="#"><i class="fas fa-boxes"></i>Inventory </a></li>
+                <li><a href="menu.html"><i class="fas fa-utensils"></i> Food Menu </a></li>
+                <li><a href="#"><i class="fas fa-cogs"></i>Settings</a></li>
+            </ul>
+        </div>
+    </label>
+    <div id="mainContent">
+        <h2>Inventory Management area </h2>
+        <div id="formContainer">
+            <label>Item Name
+                <input type="text" id="itemsName">
+            </label>
+            <label>Item Quantity 
+                <input type="text" id="itemsQty">
+            </label>
+            <br>
+            <button onClick="addData()"> ADD </button>
+        </div>
+        <table id="inventoryList">
+            <tr>
+                <th>Name of items</th>
+                <th>Qty</th>
+                <th>Action</th>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+</html>
